@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+
+  /* Wedding palette */
+  --bg: #fbfaf8;
+  --ink: #1a1a1a;
+  --muted: rgba(26, 26, 26, 0.55);
+  --line: #e6e1dc;
+  --rose: #c4a1a1; /* 로즈 톤 */
+}
+
+/* iPhone Safari 텍스트 자동 확대 방지 */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+/* 프리미엄 세리프 */
+.wedding-serif {
+  font-family: var(--font-serif);
+}
+
+/* 감성 디바이더 */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--line), transparent);
+}
+
+/* 스크롤 등장 애니메이션 (IntersectionObserver로 토글) */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 700ms ease, transform 700ms ease;
+  will-change: opacity, transform;
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* iOS 탭 하이라이트 제거 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
