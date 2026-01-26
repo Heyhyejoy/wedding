@@ -608,6 +608,11 @@ img, video {
   background-color: #fff9;
 }
 
+.bg-\[\#CAA3A3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 163 163 / var(--tw-bg-opacity, 1));
+}
+
 .object-contain {
   -o-object-fit: contain;
   object-fit: contain;
@@ -968,6 +973,10 @@ body {
 
 .hover\:opacity-95:hover {
   opacity: .95;
+}
+
+.hover\:opacity-90:hover {
+  opacity: .9;
 }
 
 .active\:scale-\[0\.99\]:active {

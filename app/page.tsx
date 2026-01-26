@@ -76,6 +76,38 @@ async function copyToClipboard(text: string) {
 
 export default function Page() {
   // share
+  function downloadICS() {
+    const start = "20260219T190000";
+    const end = "20260219T210000"; // 2시간 예식 가정
+    const timezone = "America/Toronto";
+
+    const icsContent = `
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTART;TZID=${timezone}:${start}
+DTEND;TZID=${timezone}:${end}
+SUMMARY:${INVITE.groom.ko} ♥ ${INVITE.bride.ko} 결혼식
+DESCRIPTION:${INVITE.venueName}\\n${INVITE.address}
+LOCATION:${INVITE.venueName}, ${INVITE.address}
+END:VEVENT
+END:VCALENDAR
+`.trim();
+
+    const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "wedding-invitation.ics";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    URL.revokeObjectURL(url);
+  }
+
   const sharePayload = useMemo(() => {
     const title = `${INVITE.groom.ko} ♥ ${INVITE.bride.ko} | 모바일 청첩장`;
     const text = `${INVITE.groom.ko} ♥ ${INVITE.bride.ko}\n${INVITE.datetimeText}\n${INVITE.venueName}\n${INVITE.address}`;
@@ -223,7 +255,7 @@ export default function Page() {
               <p className="text-sm">{INVITE.datetimeText}</p>
               <p className="mt-1 text-sm">{INVITE.venueName}</p>
 
-              <p className="mt-12 text-xs text-black/45">아래로 스크롤해 주세요 ↓</p>
+
             </div>
           </div>
         </section>
@@ -350,16 +382,10 @@ export default function Page() {
             </div>
 
             <div className="mt-10">
-              <PrimaryButton
-                onClick={() => {
-                  const text = encodeURIComponent(`${INVITE.groom.ko} ♥ ${INVITE.bride.ko} 결혼식`);
-                  const details = encodeURIComponent(`${INVITE.venueName}\n${INVITE.address}`);
-                  const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&details=${details}`;
-                  window.open(url, "_blank");
-                }}
-              >
+              <PrimaryButton onClick={downloadICS}>
                 캘린더에 저장하기
               </PrimaryButton>
+
             </div>
           </section>
         </FadeInSection>
@@ -622,13 +648,20 @@ function Ornament() {
 function PrimaryButton({ onClick, children }: { onClick: () => void; children: React.ReactNode }) {
   return (
     <button
-      className="w-full rounded-2xl py-3 text-sm bg-[#1a1a1a] text-white hover:opacity-95 active:opacity-90 active:scale-[0.99]"
+      className="
+        w-full rounded-2xl py-3 text-sm
+        bg-[#CAA3A3] text-white
+        hover:opacity-90
+        active:scale-[0.99]
+        transition
+      "
       onClick={onClick}
     >
       {children}
     </button>
   );
 }
+
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
