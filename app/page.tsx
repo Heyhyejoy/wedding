@@ -205,7 +205,8 @@ END:VCALENDAR
                 }
               }}
             >
-              {bgmOn ? "BGM ON" : "BGM OFF"}
+              {bgmOn ? "BGM OFF" : "BGM ON"}
+
             </button>
 
             <button
