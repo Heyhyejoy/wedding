@@ -431,7 +431,13 @@ END:VCALENDAR
               <PrimaryButton onClick={downloadICS}>
                 캘린더에 저장하기
               </PrimaryButton>
-
+              <p className="mt-4 text-xs text-black/50 leading-relaxed">
+                ※ 원활한 캘린더 저장을 위해
+                <br />
+                브라우저에서 열어주세요.
+                <br />
+                (카카오톡·인스타그램 앱 내에서는 제한될 수 있습니다.)
+              </p>
             </div>
           </section>
         </FadeInSection>
@@ -790,21 +796,18 @@ function OrnamentUnderline() {
       "
     >
       <div
-        className={`h-px w-14 bg-[var(--line)] or-line ${
-          inView ? "is-on" : ""
-        }`}
+        className={`h-px w-14 bg-[var(--line)] or-line ${inView ? "is-on" : ""
+          }`}
       />
       <span
-        className={`text-[var(--rose)] text-sm or-flower ${
-          inView ? "is-on" : ""
-        }`}
+        className={`text-[var(--rose)] text-sm or-flower ${inView ? "is-on" : ""
+          }`}
       >
         ✿
       </span>
       <div
-        className={`h-px w-14 bg-[var(--line)] or-line ${
-          inView ? "is-on" : ""
-        }`}
+        className={`h-px w-14 bg-[var(--line)] or-line ${inView ? "is-on" : ""
+          }`}
       />
     </div>
   );
