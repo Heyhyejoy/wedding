@@ -171,6 +171,7 @@ END:VCALENDAR
 
   // gallery modal
   const [openImg, setOpenImg] = useState<string | null>(null);
+  const [openVideo, setOpenVideo] = useState<string | null>(null);
 
   // HERO parallax
   const [scrollY, setScrollY] = useState(0);
@@ -508,9 +509,12 @@ END:VCALENDAR
 
             <div className="section-divider my-10" />
 
-            <p className="font-script leading-9 text-black/80">
-              문자나 개인적으로 먼저 연락 주시면 감사하겠습니다.
+            <p className="font-script leading-[1.8] text-black/80">
+              문자나 개인적으로 먼저
+              <br />
+              연락 주시면 감사하겠습니다.
             </p>
+
           </section>
         </FadeInSection>
 
@@ -562,8 +566,22 @@ END:VCALENDAR
             </div>
 
             <div className="mt-6 flex justify-center">
-              <video src="vid1.mov" className="w-32 rounded-xl border border-black/10" muted loop playsInline autoPlay />
+              <button
+                className="rounded-xl border border-black/10 overflow-hidden active:scale-[0.99] transition"
+                onClick={() => setOpenVideo("vid1.mov")}
+                aria-label="open video"
+              >
+                <video
+                  src="vid1.mov"
+                  className="w-32"
+                  muted
+                  loop
+                  playsInline
+                  autoPlay
+                />
+              </button>
             </div>
+
           </section>
         </FadeInSection>
 
@@ -617,6 +635,33 @@ END:VCALENDAR
           </div>
         </div>
       )}
+
+      {/* Video Modal */}
+      {openVideo && (
+        <div
+          className="fixed inset-0 z-50 bg-black/60 p-5 flex items-center justify-center"
+          onClick={() => setOpenVideo(null)}
+        >
+          <div className="w-full max-w-md" onClick={(e) => e.stopPropagation()}>
+            <video
+              src={openVideo}
+              className="w-full h-auto rounded-2xl bg-black"
+              controls
+              playsInline
+              autoPlay
+            />
+            <div className="mt-3 text-center">
+              <button
+                className="text-sm px-4 py-2 rounded-full border border-white/20 text-white"
+                onClick={() => setOpenVideo(null)}
+              >
+                닫기
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
 
       {/* Toast */}
       {toast && (
