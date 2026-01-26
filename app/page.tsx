@@ -782,10 +782,30 @@ function OrnamentUnderline() {
   });
 
   return (
-    <div ref={ref} className="mt-6 flex items-center justify-center gap-4">
-      <div className={`h-px w-14 bg-[var(--line)] or-line ${inView ? "is-on" : ""}`} />
-      <span className={`text-[var(--rose)] text-sm or-flower ${inView ? "is-on" : ""}`}>✿</span>
-      <div className={`h-px w-14 bg-[var(--line)] or-line ${inView ? "is-on" : ""}`} />
+    <div
+      ref={ref}
+      className="
+        my-14
+        flex items-center justify-center gap-4
+      "
+    >
+      <div
+        className={`h-px w-14 bg-[var(--line)] or-line ${
+          inView ? "is-on" : ""
+        }`}
+      />
+      <span
+        className={`text-[var(--rose)] text-sm or-flower ${
+          inView ? "is-on" : ""
+        }`}
+      >
+        ✿
+      </span>
+      <div
+        className={`h-px w-14 bg-[var(--line)] or-line ${
+          inView ? "is-on" : ""
+        }`}
+      />
     </div>
   );
 }

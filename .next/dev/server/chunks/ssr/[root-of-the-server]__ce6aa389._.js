@@ -1713,13 +1713,13 @@ function OrnamentUnderline() {
     });
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: ref,
-        className: "mt-6 flex items-center justify-center gap-4",
+        className: " my-14 flex items-center justify-center gap-4 ",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: `h-px w-14 bg-[var(--line)] or-line ${inView ? "is-on" : ""}`
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 786,
+                lineNumber: 792,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1727,14 +1727,14 @@ function OrnamentUnderline() {
                 children: "✿"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 787,
+                lineNumber: 797,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: `h-px w-14 bg-[var(--line)] or-line ${inView ? "is-on" : ""}`
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 788,
+                lineNumber: 804,
                 columnNumber: 7
             }, this)
         ]
@@ -1761,12 +1761,12 @@ function StaggerWord({ text, className = "" }) {
                 children: ch === " " ? "\u00A0" : ch
             }, `${text}-${i}-${inView ? "on" : "off"}`, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 809,
+                lineNumber: 829,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 807,
+        lineNumber: 827,
         columnNumber: 5
     }, this);
 }
@@ -1779,7 +1779,7 @@ function Stat({ label, value }) {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 825,
+                lineNumber: 845,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1790,13 +1790,13 @@ function Stat({ label, value }) {
                 children: value
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 826,
+                lineNumber: 846,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 824,
+        lineNumber: 844,
         columnNumber: 5
     }, this);
 }
@@ -1811,7 +1811,7 @@ function ETransferRow({ title, email, onCopied }) {
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 845,
+                        lineNumber: 865,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1819,13 +1819,13 @@ function ETransferRow({ title, email, onCopied }) {
                         children: email
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 846,
+                        lineNumber: 866,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 844,
+                lineNumber: 864,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1837,13 +1837,13 @@ function ETransferRow({ title, email, onCopied }) {
                 children: "복사"
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 848,
+                lineNumber: 868,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 843,
+        lineNumber: 863,
         columnNumber: 5
     }, this);
 }
@@ -1860,7 +1860,7 @@ function FadeInSection({ children, variant = "up" }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 885,
+        lineNumber: 905,
         columnNumber: 5
     }, this);
 }
