@@ -295,9 +295,7 @@ END:VCALENDAR
           </div>
         </section>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+        <OrnamentUnderline />
 
         {/* GREETING */}
         <FadeInSection>
@@ -320,45 +318,57 @@ END:VCALENDAR
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+        <OrnamentUnderline />
 
         {/* NAMES */}
         <FadeInSection>
           <section className="px-7 py-16">
-            <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-6">
-              <div className="text-center">
-                <div className="font-script text-[12px] text-black/50">신랑</div>
-                <div className="mt-6 font-script text-[22px] text-black/80 leading-tight">
-                  {INVITE.groom.ko}
-                </div>
-                <div className="mt-3 font-script text-[13px] text-black/45">
-                  ({INVITE.groom.en})
-                </div>
-              </div>
+            <RevealGroup>
+              <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-6">
+                {/* Groom */}
+                <div className="text-center">
+                  <div className="font-script text-[12px] text-black/50">
+                    <span className="text-blur">신랑</span>
+                  </div>
 
-              <div className="text-center">
-                <div className="h-[22px]" />
-                <div className="mt-10 font-script text-[18px] text-black/65">and</div>
-              </div>
+                  <div className="mt-6 font-script text-[22px] text-black/80 leading-tight">
+                    <span className="text-blur">{INVITE.groom.ko}</span>
+                  </div>
 
-              <div className="text-center">
-                <div className="font-script text-[12px] text-black/50">신부</div>
-                <div className="mt-6 font-script text-[22px] text-black/80 leading-tight">
-                  {INVITE.bride.ko}
+                  <div className="mt-3 font-script text-[13px] text-black/45">
+                    <span className="text-blur">({INVITE.groom.en})</span>
+                  </div>
                 </div>
-                <div className="mt-3 font-script text-[13px] text-black/45">
-                  ({INVITE.bride.en})
+
+                {/* and */}
+                <div className="text-center">
+                  <div className="h-[22px]" />
+                  <div className="mt-10 font-script text-[18px] text-black/65">
+                    <span className="text-blur">and</span>
+                  </div>
+                </div>
+
+                {/* Bride */}
+                <div className="text-center">
+                  <div className="font-script text-[12px] text-black/50">
+                    <span className="text-blur">신부</span>
+                  </div>
+
+                  <div className="mt-6 font-script text-[22px] text-black/80 leading-tight">
+                    <span className="text-blur">{INVITE.bride.ko}</span>
+                  </div>
+
+                  <div className="mt-3 font-script text-[13px] text-black/45">
+                    <span className="text-blur">({INVITE.bride.en})</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </RevealGroup>
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+
+        <OrnamentUnderline />
 
         {/* SAVE THE DATE + COUNTDOWN */}
         <FadeInSection>
@@ -375,9 +385,10 @@ END:VCALENDAR
                 <div className="text-center font-script text-[16px] mb-4">2026.02</div>
 
                 <div className="grid grid-cols-7 gap-2 text-center text-xs text-black/45">
-                  {["S", "M", "T", "W", "T", "F", "S"].map((d) => (
-                    <div key={d}>{d}</div>
+                  {["S", "M", "T", "W", "T", "F", "S"].map((d, i) => (
+                    <div key={`${d}-${i}`}>{d}</div>
                   ))}
+
                 </div>
 
                 <div className="mt-3 grid grid-cols-7 gap-2 text-center">
@@ -425,9 +436,7 @@ END:VCALENDAR
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+        <OrnamentUnderline />
 
         {/* WEDDING INFO */}
         <FadeInSection>
@@ -457,9 +466,7 @@ END:VCALENDAR
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+        <OrnamentUnderline />
 
         {/* MAP */}
         <FadeInSection>
@@ -484,9 +491,7 @@ END:VCALENDAR
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+        <OrnamentUnderline />
 
         {/* TRANSPORTATION */}
         <FadeInSection>
@@ -509,9 +514,7 @@ END:VCALENDAR
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+        <OrnamentUnderline />
 
         {/* ACCOUNT */}
         <FadeInSection>
@@ -531,9 +534,7 @@ END:VCALENDAR
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+        <OrnamentUnderline />
 
         {/* RSVP */}
         <FadeInSection>
@@ -552,9 +553,7 @@ END:VCALENDAR
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+        <OrnamentUnderline />
 
         {/* MEAL */}
         <FadeInSection>
@@ -575,10 +574,7 @@ END:VCALENDAR
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
-
+        <OrnamentUnderline />
         {/* GALLERY */}
         <FadeInSection>
           <section className="px-7 py-20">
@@ -619,9 +615,7 @@ END:VCALENDAR
           </section>
         </FadeInSection>
 
-        <FadeInSection>
-          <Ornament />
-        </FadeInSection>
+        <OrnamentUnderline />
 
         {/* THANK YOU */}
         <FadeInSection variant="scale">
@@ -714,15 +708,16 @@ END:VCALENDAR
 
 /* ---------- Components ---------- */
 
-function Ornament() {
+function Ornament({ on }: { on: boolean }) {
   return (
-    <div className="py-6 flex items-center justify-center gap-4">
-      <div className="h-px w-14 bg-[var(--line)]" />
-      <span className="text-[var(--rose)] text-sm">✿</span>
-      <div className="h-px w-14 bg-[var(--line)]" />
+    <div className={`py-6 flex items-center justify-center gap-4 ${on ? "or-on" : ""}`}>
+      <div className="h-px w-14 bg-[var(--line)] or-line" />
+      <span className="text-[var(--rose)] text-sm or-flower">✿</span>
+      <div className="h-px w-14 bg-[var(--line)] or-line" />
     </div>
   );
 }
+
 
 function PrimaryButton({ onClick, children }: { onClick: () => void; children: React.ReactNode }) {
   return (
@@ -738,6 +733,88 @@ function PrimaryButton({ onClick, children }: { onClick: () => void; children: R
     >
       {children}
     </button>
+  );
+}
+
+function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {
+  const ref = useRef<T | null>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const io = new IntersectionObserver(([entry]) => {
+      setInView(entry.isIntersecting);
+    }, options);
+
+    io.observe(el);
+    return () => io.disconnect();
+  }, [options]);
+
+  return { ref, inView };
+}
+
+
+function RevealGroup({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  const { ref, inView } = useInView<HTMLDivElement>({
+    threshold: 0.35,
+    rootMargin: "0px 0px -10% 0px",
+  });
+
+  return (
+    <div ref={ref} className={`${inView ? "reveal-on" : ""} ${className}`}>
+      {children}
+    </div>
+  );
+}
+
+function OrnamentUnderline() {
+  const { ref, inView } = useInView<HTMLDivElement>({
+    threshold: 0.45,
+    rootMargin: "0px 0px -15% 0px",
+  });
+
+  return (
+    <div ref={ref} className="mt-6 flex items-center justify-center gap-4">
+      <div className={`h-px w-14 bg-[var(--line)] or-line ${inView ? "is-on" : ""}`} />
+      <span className={`text-[var(--rose)] text-sm or-flower ${inView ? "is-on" : ""}`}>✿</span>
+      <div className={`h-px w-14 bg-[var(--line)] or-line ${inView ? "is-on" : ""}`} />
+    </div>
+  );
+}
+
+
+function StaggerWord({
+  text,
+  className = "",
+}: {
+  text: string;
+  className?: string;
+}) {
+  const { ref, inView } = useInView<HTMLSpanElement>({
+    threshold: 0.45,
+    rootMargin: "0px 0px -15% 0px",
+  });
+
+  return (
+    <span ref={ref} className={className} aria-label={text}>
+      {text.split("").map((ch, i) => (
+        <span
+          key={`${text}-${i}-${inView ? "on" : "off"}`}
+          className={`letter ${inView ? "is-on" : ""}`}
+          style={{ animationDelay: `${i * 45}ms` }}
+        >
+          {ch === " " ? "\u00A0" : ch}
+        </span>
+      ))}
+    </span>
   );
 }
 
@@ -789,26 +866,10 @@ function FadeInSection({
   children: React.ReactNode;
   variant?: "up" | "scale";
 }) {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.15 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const { ref, inView } = useInView<HTMLDivElement>({
+    threshold: 0.35,
+    rootMargin: "0px 0px -10% 0px",
+  });
 
   const hiddenClass =
     variant === "scale"
@@ -823,8 +884,7 @@ function FadeInSection({
   return (
     <div
       ref={ref}
-      className={`transition-all duration-[950ms] ease-out ${visible ? shownClass : hiddenClass
-        }`}
+      className={`transition-all duration-[950ms] ease-out ${inView ? shownClass : hiddenClass}`}
     >
       {children}
     </div>

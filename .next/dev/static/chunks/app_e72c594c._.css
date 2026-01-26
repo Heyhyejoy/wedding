@@ -264,10 +264,6 @@ img, video {
   pointer-events: none;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .fixed {
   position: fixed;
 }
@@ -574,9 +570,9 @@ img, video {
   border-color: #fff3;
 }
 
-.bg-\[\#1a1a1a\] {
+.bg-\[\#CAA3A3\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 26 26 / var(--tw-bg-opacity, 1));
+  background-color: rgb(202 163 163 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#fbfaf8cc\] {
@@ -589,6 +585,11 @@ img, video {
 
 .bg-\[var\(--line\)\] {
   background-color: var(--line);
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-black\/60 {
@@ -606,16 +607,6 @@ img, video {
 
 .bg-white\/60 {
   background-color: #fff9;
-}
-
-.bg-\[\#CAA3A3\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 163 163 / var(--tw-bg-opacity, 1));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .object-contain {
@@ -765,6 +756,10 @@ img, video {
   line-height: 2.25rem;
 }
 
+.leading-\[1\.8\] {
+  line-height: 1.8;
+}
+
 .leading-\[1\.9\] {
   line-height: 1.9;
 }
@@ -775,10 +770,6 @@ img, video {
 
 .leading-tight {
   line-height: 1.25;
-}
-
-.leading-\[1\.8\] {
-  line-height: 1.8;
 }
 
 .tracking-\[0\.25em\] {
@@ -904,10 +895,6 @@ img, video {
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
-.duration-\[900ms\] {
-  transition-duration: .9s;
-}
-
 .duration-\[950ms\] {
   transition-duration: .95s;
 }
@@ -976,12 +963,137 @@ body {
   transform: translateY(0);
 }
 
-.hover\:border-black\/20:hover {
-  border-color: #0003;
+@keyframes blurIn {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur();
+    transform: translateY(0);
+  }
 }
 
-.hover\:opacity-95:hover {
-  opacity: .95;
+.text-blur {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(6px);
+}
+
+.text-blur.is-on {
+  animation: .9s ease-out both blurIn;
+}
+
+@keyframes lineReveal {
+  from {
+    opacity: .3;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.underline-line {
+  opacity: .3;
+  transform-origin: 0;
+  background: #0000001a;
+  width: 10rem;
+  height: 1px;
+  transform: scaleX(0);
+}
+
+.underline-line.is-on {
+  animation: .9s ease-out both lineReveal;
+}
+
+@keyframes letterUp {
+  from {
+    opacity: 0;
+    filter: blur(6px);
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur();
+    transform: translateY(0);
+  }
+}
+
+.letter {
+  opacity: 0;
+  filter: blur(6px);
+  display: inline-block;
+  transform: translateY(8px);
+}
+
+.letter.is-on {
+  animation: .7s ease-out both letterUp;
+}
+
+.reveal-on .text-blur {
+  animation: .9s ease-out both blurIn;
+}
+
+@keyframes orLine {
+  from {
+    opacity: .2;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes orFlower {
+  from {
+    opacity: 0;
+    transform: scale(.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.or-on .or-line {
+  animation: .7s ease-out both orLine;
+}
+
+.or-on .or-flower {
+  animation: .5s ease-out .18s both orFlower;
+}
+
+.or-line {
+  transform-origin: center;
+  opacity: .2;
+  transform: scaleX(0);
+}
+
+.or-flower {
+  opacity: 0;
+  transform: scale(.92);
+}
+
+.or-line.is-on {
+  animation: .7s ease-out both orLine;
+}
+
+.or-flower.is-on {
+  animation: .5s ease-out .15s both orFlower;
+}
+
+.hover\:border-black\/20:hover {
+  border-color: #0003;
 }
 
 .hover\:opacity-90:hover {
@@ -992,10 +1104,6 @@ body {
   --tw-scale-x: .99;
   --tw-scale-y: .99;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.active\:opacity-90:active {
-  opacity: .9;
 }
 
 /* [project]/app/mapo_41833a85.module.css [app-client] (css) */

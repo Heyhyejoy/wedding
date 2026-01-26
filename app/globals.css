@@ -74,3 +74,95 @@ body {
   transform: translateY(0);
   transition: all 0.9s ease;
 }
+
+/* ===== Text Animations (triggered) ===== */
+
+@keyframes blurIn {
+  from { opacity: 0; transform: translateY(6px); filter: blur(8px); }
+  to   { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+.text-blur {
+  opacity: 0;
+  transform: translateY(6px);
+  filter: blur(8px);
+}
+.text-blur.is-on {
+  animation: blurIn 900ms ease-out both;
+}
+
+@keyframes lineReveal {
+  from { transform: scaleX(0); opacity: 0.3; }
+  to   { transform: scaleX(1); opacity: 1; }
+}
+
+.underline-line {
+  height: 1px;
+  width: 10rem;
+  background: rgba(0,0,0,0.10);
+  transform: scaleX(0);
+  opacity: 0.3;
+  transform-origin: left;
+}
+.underline-line.is-on {
+  animation: lineReveal 900ms ease-out both;
+}
+
+@keyframes letterUp {
+  from { opacity: 0; transform: translateY(8px); filter: blur(6px); }
+  to   { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+.letter {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(8px);
+  filter: blur(6px);
+}
+.letter.is-on {
+  animation: letterUp 700ms ease-out both;
+}
+.reveal-on .text-blur {
+  animation: blurIn 900ms ease-out both;
+}
+/* Ornament reveal animation */
+@keyframes orLine {
+  from { transform: scaleX(0); opacity: 0.2; }
+  to   { transform: scaleX(1); opacity: 1; }
+}
+@keyframes orFlower {
+  from { transform: scale(0.92); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.or-line {
+  transform: scaleX(0);
+  transform-origin: center;
+  opacity: 0.2;
+}
+.or-flower {
+  opacity: 0;
+  transform: scale(0.92);
+}
+
+.or-on .or-line {
+  animation: orLine 700ms ease-out both;
+}
+.or-on .or-flower {
+  animation: orFlower 500ms ease-out both;
+  animation-delay: 180ms;
+}
+@keyframes orLine {
+  from { transform: scaleX(0); opacity: 0.2; }
+  to   { transform: scaleX(1); opacity: 1; }
+}
+@keyframes orFlower {
+  from { transform: scale(0.92); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.or-line { transform: scaleX(0); transform-origin: center; opacity: 0.2; }
+.or-flower { opacity: 0; transform: scale(0.92); }
+
+.or-line.is-on { animation: orLine 700ms ease-out both; }
+.or-flower.is-on { animation: orFlower 500ms ease-out both; animation-delay: 150ms; }
