@@ -20,7 +20,8 @@ const INVITE = {
   trafficText: [
     "교회의 주차자리가 협소하여 자리가",
     "부족할 수 있어 양해부탁드립니다.",
-    "또 교회 외에도 교회 앞 샤퍼스 주차장 사용 가능합니다.",
+    "또 교회 외에도 교회 앞 샤퍼스 주차장",
+    "사용 가능합니다.",
   ],
 
   mealLines: [
@@ -178,7 +179,7 @@ export default function Page() {
           <div className="relative h-[100svh] min-h-[680px] overflow-hidden">
             {/* 배경 일러스트 */}
             <img
-              src="pic1.jpg"
+              src="/pic1.jpg"
               alt="background illustration"
               className="
         absolute inset-0
@@ -591,7 +592,7 @@ export default function Page() {
             {/* vid1 (작게, 서브) */}
             <div className="mt-6 flex justify-center">
               <video
-                src="/vid1.mov"
+                src="vid1.mov"
                 className="w-32 rounded-xl border border-black/10"
                 muted
                 loop
@@ -664,7 +665,7 @@ export default function Page() {
       )}
       <audio
         ref={audioRef}
-        src="/bgm.mp3"
+        src="bgm.mp3"
         loop
         playsInline
       />
