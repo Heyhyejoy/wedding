@@ -42,10 +42,10 @@ const INVITE = {
   },
 
   // public 폴더에 넣은 사진 파일명과 맞추기
-  photos: ["/photo1.jpg", "/photo2.jpg", "/photo3.jpg"],
+  photos: ["photo1.jpg", "photo2.jpg", "photo3.jpg"],
 
   // 약도 이미지
-  mapImage: "/map.jpg",
+  mapImage: "map.jpg",
 };
 
 
@@ -178,7 +178,7 @@ export default function Page() {
           <div className="relative h-[100svh] min-h-[680px] overflow-hidden">
             {/* 배경 일러스트 */}
             <img
-              src="/pic1.jpg"
+              src="pic1.jpg"
               alt="background illustration"
               className="
         absolute inset-0
@@ -575,7 +575,7 @@ export default function Page() {
 
             {/* photos 1–4 */}
             <div className="mt-10 grid grid-cols-2 gap-3">
-              {["/photo1.jpg", "/photo2.jpg", "/photo3.jpg", "/photo4.jpg"].map(
+              {["photo1.jpg", "photo2.jpg", "photo3.jpg", "photo4.jpg"].map(
                 (src) => (
                   <button
                     key={src}

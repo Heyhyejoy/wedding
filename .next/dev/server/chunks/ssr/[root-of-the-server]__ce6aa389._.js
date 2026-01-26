@@ -58,12 +58,12 @@ const INVITE = {
     },
     // public 폴더에 넣은 사진 파일명과 맞추기
     photos: [
-        "/photo1.jpg",
-        "/photo2.jpg",
-        "/photo3.jpg"
+        "photo1.jpg",
+        "photo2.jpg",
+        "photo3.jpg"
     ],
     // 약도 이미지
-    mapImage: "/map.jpg"
+    mapImage: "map.jpg"
 };
 const WEDDING_ISO = "2026-02-19T19:00:00-05:00";
 function pad2(n) {
@@ -211,7 +211,7 @@ function Page() {
                             className: "relative h-[100svh] min-h-[680px] overflow-hidden",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/pic1.jpg",
+                                    src: "pic1.jpg",
                                     alt: "background illustration",
                                     className: " absolute inset-0 w-full h-full object-contain opacity-30 pointer-events-none "
                                 }, void 0, false, {
@@ -1285,10 +1285,10 @@ function Page() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mt-10 grid grid-cols-2 gap-3",
                                     children: [
-                                        "/photo1.jpg",
-                                        "/photo2.jpg",
-                                        "/photo3.jpg",
-                                        "/photo4.jpg"
+                                        "photo1.jpg",
+                                        "photo2.jpg",
+                                        "photo3.jpg",
+                                        "photo4.jpg"
                                     ].map((src)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             className: "rounded-2xl overflow-hidden border border-black/10 bg-white active:scale-[0.99]",
                                             onClick: ()=>setOpenImg(src),
