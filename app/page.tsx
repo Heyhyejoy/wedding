@@ -598,7 +598,7 @@ END:VCALENDAR
             </div>
 
             <div className="mt-10 grid grid-cols-2 gap-3">
-              {["photo1.jpg", "photo2.jpg", "photo3.jpg", "photo4.jpg"].map((src) => (
+              {["wed1.jpg", "wed5.jpg", "wed4.jpg", "wed3.jpg"].map((src) => (
                 <button
                   key={src}
                   className="rounded-2xl overflow-hidden border border-black/10 bg-white active:scale-[0.99]"
@@ -608,7 +608,7 @@ END:VCALENDAR
                 </button>
               ))}
             </div>
-
+{/* 
             <div className="mt-6 flex justify-center">
               <button
                 className="rounded-xl border border-black/10 overflow-hidden active:scale-[0.99] transition"
@@ -625,7 +625,7 @@ END:VCALENDAR
                 />
               </button>
             </div>
-
+*/}
           </section>
         </FadeInSection>
 

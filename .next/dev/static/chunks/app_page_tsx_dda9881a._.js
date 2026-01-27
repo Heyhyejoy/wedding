@@ -1412,10 +1412,10 @@ END:VCALENDAR
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mt-10 grid grid-cols-2 gap-3",
                                     children: [
-                                        "photo1.jpg",
-                                        "photo2.jpg",
-                                        "photo3.jpg",
-                                        "photo4.jpg"
+                                        "wed1.jpg",
+                                        "wed5.jpg",
+                                        "wed4.jpg",
+                                        "wed3.jpg"
                                     ].map((src)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             className: "rounded-2xl overflow-hidden border border-black/10 bg-white active:scale-[0.99]",
                                             onClick: ()=>setOpenImg(src),
@@ -1436,34 +1436,6 @@ END:VCALENDAR
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 600,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mt-6 flex justify-center",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "rounded-xl border border-black/10 overflow-hidden active:scale-[0.99] transition",
-                                        onClick: ()=>setOpenVideo("vid1.mov"),
-                                        "aria-label": "open video",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
-                                            src: "vid1.mov",
-                                            className: "w-32",
-                                            muted: true,
-                                            loop: true,
-                                            playsInline: true,
-                                            autoPlay: true
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/page.tsx",
-                                            lineNumber: 618,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/page.tsx",
-                                        lineNumber: 613,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.tsx",
-                                    lineNumber: 612,
                                     columnNumber: 13
                                 }, this)
                             ]
