@@ -257,16 +257,24 @@ END:VCALENDAR
       <div className="mx-auto max-w-md">
         {/* HERO */}
         <section className="relative">
-          <div className="relative h-[100svh] min-h-[680px] overflow-hidden">
+          <div className="relative h-[100svh] min-h-[300px] overflow-hidden">
             <img
-              src="pic1.jpg"
-              alt="background illustration"
-              className="absolute inset-0 w-full h-full object-contain opacity-30 pointer-events-none"
+              src="wed11.jpg"
+              alt="background"
+              className="
+    absolute inset-0
+    w-full h-full
+    object-cover
+    object-center
+    opacity-40
+    pointer-events-none
+  "
               style={{
                 transform: `translateY(${Math.min(scrollY * 0.12, 60)}px)`,
                 transition: "transform 60ms linear",
               }}
             />
+
 
             <div className="absolute inset-0 bg-[var(--bg)]/10 opacity-40" />
 
