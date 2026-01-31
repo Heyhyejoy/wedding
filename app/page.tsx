@@ -6,13 +6,13 @@ const INVITE = {
   groom: { name: "Lucas Martin" },
   bride: { name: "Emma Clarke" },
 
-  dateTimeText: "Thursday, February 19, 2026 · 7:00 PM (Toronto Time)",
+  dateTimeText: "Thursday, February 19, 2026 · 7:00 PM (EST)",
   venueName: "The Great Hall",
   address: "1087 Queen St W, Toronto, ON M6J 1H3, Canada",
 
   greetingLines: [
-    "With grateful hearts, we invite you",
-    "to celebrate with us as we begin our life together.",
+    "With grateful hearts, we invite you to",
+    "celebrate with us as we begin our life together.",
     "Your presence and prayers would",
     "mean so much to us on this joyful day.",
   ],
@@ -20,19 +20,21 @@ const INVITE = {
   transportationLines: [
     "Limited parking is available at the venue.",
     "Street parking may be available nearby.",
-    "We recommend arriving early to allow time for parking.",
+    "We recommend arriving early",
+    "to allow time for parking.",
   ],
 
   mealLines: [
-    "After the ceremony, please join us for light refreshments",
+    "After the ceremony, please join us",
+    "for light refreshments",
     "and a simple reception meal.",
     "We would be honored to celebrate together.",
   ],
 
   thanksLines: [
     "Thank you for your love, prayers, and support.",
-    "We are truly grateful for everyone celebrating with us.",
-    "With God’s grace, we will build a loving home together. ♥︎",
+    "We are truly grateful for everyone",
+    "celebrating with us. ♥︎",
   ],
 
   eTransfer: {
