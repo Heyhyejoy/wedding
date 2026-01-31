@@ -1,5 +1,8 @@
 {
   "app": {
+    "[project]/app/_not-found/page": [
+      "static/media/MapoFlowerIsland-s.p.c820ab41.ttf"
+    ],
     "[project]/app/page": [
       "static/media/MapoFlowerIsland-s.p.c820ab41.ttf"
     ]

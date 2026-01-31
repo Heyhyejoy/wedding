@@ -1,89 +1,20 @@
-[00:00:00.774] Server  LOG     ✓ Ready in 587ms
-[00:00:02.252] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:24.641] Server  LOG     ✓ Compiled in 415ms
-[00:14:35.317] Server  LOG     ✓ Compiled in 18ms
-[00:14:45.287] Server  LOG     ✓ Compiled in 15ms
-[00:16:22.470] Server  LOG     ✓ Compiled in 34ms
-[00:18:25.142] Server  LOG     ✓ Compiled in 22ms
-[00:18:33.204] Server  LOG     ✓ Compiled in 17ms
-[00:18:37.760] Server  LOG     ✓ Compiled in 23ms
-[00:18:42.713] Server  LOG     ✓ Compiled in 23ms
-[00:20:35.346] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:35.468] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <RedirectErrorBoundary router={{...}}>
-      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-        <SegmentViewNode type="page" pagePath="page.tsx">
-          <SegmentTrieNode>
-          <ClientPageRoot Component={function Page} serverProvidedParams={{...}}>
-            <Page params={Promise} searchParams={Promise}>
-              <main className="min-h-scre...">
-                <div>
-                <div className="mx-auto ma...">
-                  <section>
-                  <OrnamentUnderline>
-                  <FadeInSection>
-                  <OrnamentUnderline>
-                  <FadeInSection>
-                  <OrnamentUnderline>
-                  <FadeInSection>
-                    <div ref={{current:null}} className="transition...">
-                      <section className="px-7 py-22...">
-                        <h2>
-                        <div>
-                        <div>
-                        <div>
-                        <div>
-                        <div className="grid grid-...">
-                          <Stat>
-                          <Stat>
-                          <Stat>
-                          <Stat label="SEC" value="17">
-                            <div className="rounded-2x...">
-                              <div>
-                              <div
-                                className="mt-2 font-script text-[28px] leading-none"
-                                style={{fontVariantNumeric:"tabular-nums"}}
-                              >
-+                               17
--                               18
-                        ...
-                  ...
-                ...
-        ...
-      ...
-
-[00:21:09.644] Server  LOG     ✓ Compiled in 17ms
-[00:21:12.137] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:21.405] Server  LOG     ✓ Compiled in 21ms
-[00:21:27.823] Server  LOG     ✓ Compiled in 22ms
-[00:21:30.008] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:35.582] Server  LOG     ✓ Compiled in 22ms
-[00:21:47.004] Server  LOG     ✓ Compiled in 29ms
-[00:21:49.458] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:55.735] Server  LOG     ✓ Compiled in 30ms
-[00:26:18.835] Server  LOG     ✓ Compiled in 41ms
-[00:26:21.957] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:27:12.625] Server  LOG     ✓ Compiled in 29ms
-[00:28:24.144] Server  LOG     ✓ Compiled in 17ms
-[00:28:26.253] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:36.338] Server  LOG     ✓ Compiled in 18ms
-[00:33:54.718] Server  LOG     ✓ Compiled in 16ms
-[00:34:02.017] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:47.811] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:38:17.620] Server  LOG     ✓ Compiled in 15ms
-[00:38:19.393] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:44:16.399] Server  LOG     ✓ Compiled in 41ms
-[00:45:45.798] Server  LOG     ✓ Compiled in 12ms
-[00:46:11.100] Server  LOG     ✓ Compiled in 22ms
+[00:00:01.320] Server  WARN    ⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result.
+[00:00:01.395] Server  LOG     ✓ Ready in 1230ms
+[00:00:10.117] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:37.490] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:43.397] Server  LOG     ✓ Compiled in 27ms
+[00:16:15.525] Server  LOG     ✓ Compiled in 27ms
+[00:16:22.676] Server  LOG     ✓ Compiled in 32ms
+[00:16:25.010] Server  LOG     ✓ Compiled in 22ms
+[00:17:34.223] Server  LOG     ✓ Compiled in 12ms
+[00:17:54.841] Server  LOG     ✓ Compiled in 14ms
+[00:17:58.315] Server  LOG     ✓ Compiled in 23ms
+[00:18:44.479] Server  LOG     ✓ Compiled in 28ms
+[00:22:51.102] Server  LOG     ✓ Compiled in 21ms
+[00:23:36.611] Server  LOG     ✓ Compiled in 21ms
+[00:24:07.062] Server  LOG     ✓ Compiled in 14ms
+[00:24:18.886] Server  LOG     ✓ Compiled in 17ms
+[00:24:22.140] Server  LOG     ✓ Compiled in 17ms
+[00:24:44.676] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:11.754] Server  LOG     ✓ Compiled in 24ms
+[00:25:42.870] Server  LOG     ✓ Compiled in 26ms
