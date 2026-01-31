@@ -261,7 +261,7 @@ END:VCALENDAR
                 WEDDING INVITATION
               </div>
 
-              <h1 className="mt-6 font-script text-[30px] leading-tight">
+              <h1 className="mt-6 font-script text-[28px] leading-tight">
                 {INVITE.groom.name}
                 <span className="mx-2 text-[var(--rose)]">♥</span>
                 {INVITE.bride.name}
