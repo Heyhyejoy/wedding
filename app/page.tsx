@@ -139,7 +139,7 @@ END:VCALENDAR
 
     URL.revokeObjectURL(url);
   }
-  const galleryImages = ["wed5.jpg", "wed1.jpg", "wed3.jpg", "wed4.jpg"];
+  const galleryImages = ["wed1.jpg", "wed2.jpg", "wed3.jpg", "wed4.jpg"];
   const [selectedImg, setSelectedImg] = useState(galleryImages[0]);
 
   const sharePayload = useMemo(() => {
